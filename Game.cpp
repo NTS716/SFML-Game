@@ -49,6 +49,14 @@ void Game::handleEvents()
 			case sf::Event::KeyReleased:
 				this->keyReleased(event.key.code);
 				break;
+
+			case sf::Event::MouseButtonPressed:
+				this->mousePressed(event.mouseButton.button);
+				break;
+
+			case sf::Event::MouseButtonReleased:
+				this->mouseReleased(event.mouseButton.button);
+				break;
 		}
 	}
 }
@@ -76,4 +84,10 @@ void Game::keyPressed(sf::Keyboard::Key key_arg)
 {}
 
 void Game::keyReleased(sf::Keyboard::Key key_arg)
+{}
+
+void Game::mousePressed(sf::Mouse::Button button_arg)
+{}
+
+void Game::mouseReleased(sf::Mouse::Button button_arg)
 {}

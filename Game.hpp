@@ -30,6 +30,8 @@ class Game
 
 		virtual void keyPressed(sf::Keyboard::Key key_arg);
 		virtual void keyReleased(sf::Keyboard::Key key_arg);
+		virtual void mousePressed(sf::Mouse::Button button_arg);
+		virtual void mouseReleased(sf::Mouse::Button button_arg);
 };
 
 #endif
